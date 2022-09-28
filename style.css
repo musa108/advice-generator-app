@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=League+Spartan:wght@400;500;700&family=Manrope:wght@800&family=Poppins:ital,wght@0,500;0,600;1,400;1,500;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: hsl(217, 19%, 38%);
+    font-size: 1rem;
+    width: 100%;
+    font-family: 'Manrope', sans-serif;
+}
+.container{
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 80px;
+    padding: 3rem;
+    background:hsl(217, 19%, 24%) ;
+    width: 600px;
+    align-items: center; 
+    position: relative;
+    border-radius: 0.5rem;  
+}
+#advice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color:hsl(150, 100%, 66%);
+}
+#text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:hsl(193, 38%, 86%);
+    padding: 3rem;
+    font-size: 1.80rem;
+    margin-left: 2rem;
+}
+.icon{
+    position: absolute;
+    top: 91%;
+    left:47% ;
+    background: hwb(150 32% 0%);
+    padding: 0.8rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon:hover{
+    background: hsl(150, 59%, 51%);
+}
+img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divider{
+    margin-left: 2.4rem;
+}
+@media (max-width:600px) {
+    .container{
+        margin-left:2rem;
+        margin-top: 120px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        max-width: 350px;
+    }
+    #text{
+        font-size: 1rem;
+    }
+    .divider{
+        max-width: 300px;
+        margin-left: -30px;
+    }
+   .icon{
+    left:42%;
+   }
+}
